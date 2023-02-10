@@ -3,7 +3,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
 }
 
 #barra{
@@ -15,19 +14,27 @@ body{
     display: none;
 }
 
-#chat{
+#chat {
+    display: block;
+    overflow-y: auto;
     height: 400px;
+    float:left; 
+    border-bottom-width: 0;
 }
 
 .msg{
     padding-top: 10px;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .oro{
     padding-top: 10px;
 }
 
+.salir:hover{
+    cursor: pointer;
+}
 .enlace-salir{
     color:#027f43;
 }

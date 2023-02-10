@@ -11,18 +11,9 @@ $(function() {
     const nickError = $('#nick-error');
     const nickName = $('#nick-name');
 
-    const mensaje = document.querySelector('#message');
-
     const userNames = $('#usernames');
 
     //Actos
-
-    function validar(){
-        if (mensaje.value.length==0) {
-            alert('el campo no puesde estar vacio');
-        }
-
-    }
 
     //Mensaje directo al servidor
     messageForm.submit( e => {
@@ -49,8 +40,12 @@ $(function() {
         socket.emit('nuevo usuario', nickName.val(), datos =>{
             if(datos){
                 nick = nickName.val();
-                $('#nick-wrap').hide();
-                $('#content-wrap').show();
+                if(nick != "" || /^\s+$/.test(nick)){
+                    $('#nick-wrap').hide();
+                    $('#content-wrap').show();
+                }else{
+                    nickError.html('<div class="alert alert-danger">Datos no validos</div>');
+                }
             }else{
                 nickError.html('<div class="alert alert-danger">El usuario ya existe</div>');
             }
@@ -80,6 +75,4 @@ $(function() {
     });
 
 
-})
-
-const socket = io();
+});
