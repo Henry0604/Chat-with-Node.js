@@ -1,0 +1,33 @@
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2022/02/23/17/08/planets-7031048_1280.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#barra{
+    margin: 20px 30px;
+    font-size: 30px;
+}
+
+#content-wrap{
+    display: none;
+}
+
+#chat{
+    height: 400px;
+}
+
+.msg{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.oro{
+    padding-top: 10px;
+}
+
+.enlace-salir{
+    color:#027f43;
+}
