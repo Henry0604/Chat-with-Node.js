@@ -1,10 +1,10 @@
-# Schoolwork.-HTML_and_CSS_Practice
+# Chat-with-Node.js
 This repository aims to create a web environment where users can connect and have a conversation via chat, displaying active users and what they write in the chat.
 
 ## Introduction
 This chat was created using HTML, CSS, Bootstrap, and JavaScript, where the latter was used to make a multi-user chat possible through the utilization of WebSockets, resulting in a real-time chat experience.
 
-<img src="" alt="Inside Job" width="1000" height="500" />
+<img src="https://github.com/Henry0604/Chat-with-Node.js/assets/113632465/e187c140-e9ac-48e6-9956-afbaf7ddacab" alt="Chat-with-Node.js" width="1000" height="500" />
 
 ## Technologies used 
 
